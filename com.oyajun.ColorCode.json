@@ -22,22 +22,6 @@
         "*.a"
     ],
     "modules" : [
-    	{
-            "name" : "blueprint-compiler",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "cleanup" : [
-                "*"
-            ],
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://gitlab.gnome.org/jwestman/blueprint-compiler.git",
-                    "tag" : "v0.18.0"
-                }
-            ]
-        },
-
         {
             "name" : "color-code",
             "builddir" : true,
