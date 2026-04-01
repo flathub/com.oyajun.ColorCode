@@ -1,7 +1,7 @@
 {
     "app-id" : "com.oyajun.ColorCode",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
+    "runtime-version" : "50",
     "sdk" : "org.gnome.Sdk",
     "command" : "color-code",
     "finish-args" : [
@@ -9,17 +9,6 @@
         "--socket=fallback-x11",
         "--device=dri",
         "--socket=wayland"
-    ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
     ],
     "modules" : [
         {
@@ -31,7 +20,8 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/oyajun/color-code.git",
-                    "tag" : "v0.2.1"
+                    "tag" : "v0.2.1",
+                    "commit" : "96e7bf4471b86a0560c0e41fcb9a52c138337f4e"
                 }
             ]
         }
